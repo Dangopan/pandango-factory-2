@@ -1,6 +1,6 @@
 body {
     background-color: #fff;
-    position: relative;
+    position        : relative;
 }
 
 .menu {
@@ -37,25 +37,25 @@ a:hover {
 
 
 .main {
-    max-width: 500px;
-    height: 250px;
-    margin: 0 auto;
-    background-image: url("../img/pandangologo3.png");
-    background-size: contain;
-    background-repeat: no-repeat;
+    max-width          : 500px;
+    height             : 250px;
+    margin             : 0 auto;
+    background-image   : url("../img/pandangologo3.png");
+    background-size    : contain;
+    background-repeat  : no-repeat;
     background-position: center;
-    position: relative;
+    position           : relative;
 }
 
 
 #panda {
-    width      : 200px;
-    height: 200px;
-    position   : absolute;
-    top        : 120px;
-    left:  0;
-    background-image: url("../img/pandango透明2.png");
-    background-size: 80px;
+    width            : 200px;
+    height           : 200px;
+    position         : absolute;
+    top              : 120px;
+    left             : 0;
+    background-image : url("../img/pandango透明2.png");
+    background-size  : 80px;
     background-repeat: no-repeat;
 }
 
@@ -99,7 +99,7 @@ a:hover {
 
 .informationbox {
     margin: 0 auto;
-    width: calc(100% - 10px);
+    width : calc(100% - 10px);
 }
 
 .information {
@@ -107,22 +107,24 @@ a:hover {
     margin       : auto;
     border-radius: 15px;
     background   : #FFFFE1;
-    padding:5px ;
+    padding      : 5px;
 }
 
-.information dt{
+.information dt {
     font-weight: bold;
 }
-.information dd{
-    font-size:14px;
+
+.information dd {
+    font-size: 14px;
 }
+
 .information span {
-    margin-left: 5px;
+    margin-left  : 5px;
     color        : white;
     background   : crimson;
     border-radius: 5px;
     font-size    : 12px;
-    padding:0 2px;
+    padding      : 0 2px;
 }
 
 
@@ -150,11 +152,11 @@ a:hover {
     }
 }
 
-h1{
+h1 {
     font-size  : 25px;
-    text-align   : center;
-    font-family  : serif;
-    color        : skyblue;
+    text-align : center;
+    font-family: serif;
+    color      : skyblue;
 }
 
 .information a {
@@ -166,14 +168,14 @@ h1{
     color: cornflowerblue;
 }
 
-.profile{
+.profile {
     margin-top: 30px;
 }
 
 .contents {
     background   : radial-gradient(lightyellow, transparent);
     border-radius: 20px;
-    padding: 0 10px;
+    padding      : 0 10px;
 }
 
 .contents span {
@@ -183,26 +185,28 @@ h1{
     font-family: cursive;
     text-shadow: 2px 3px 1px yellow;
 }
+
 .contents span::after {
-    display: block;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100px;
-    height: 100px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 50%;
-    background-image: url("../img/pandango透明 半分.png");
+    display          : block;
+    content          : "";
+    top              : 0;
+    left             : 0;
+    width            : 100px;
+    height           : 100px;
+    background-color : #fff;
+    border           : 1px solid #ddd;
+    border-radius    : 50%;
+    background-image : url("../img/pandango透明 半分.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size  : contain;
 
 
 }
+
 .profile img {
-    height          : 200px;
-    margin          : auto;
-    margin-top      : 50px;
+    height    : 200px;
+    margin    : auto;
+    margin-top: 50px;
 }
 
 .profile p {
@@ -210,32 +214,34 @@ h1{
     margin     : auto;
     font-size  : 16px;
 }
-.profile h1{
+
+.profile h1 {
     position: relative;
 }
-.profile h1 span{
+
+.profile h1 span {
     background-color: #fff;
-    padding: 0 10px;
+    padding         : 0 10px;
 }
 
 .profile h1::after {
-    display: block;
-    content: "";
-    margin-top: -20px;
-    width: 100%;
-    height: 4px;
+    display      : block;
+    content      : "";
+    margin-top   : -20px;
+    width        : 100%;
+    height       : 4px;
     border-bottom: 3px dashed #87CEEB;
 }
 
 .scrollpanda {
-    position: absolute;
-    width   : 100px;
-    height: 100px;
-    background-image: url("../img/scroll-panda.png");
-    background-size: contain;
+    position         : absolute;
+    width            : 100px;
+    height           : 100px;
+    background-image : url("../img/scroll-panda.png");
+    background-size  : contain;
     background-repeat: no-repeat;
-    bottom: 15px;
-    right: 0;
+    bottom           : 15px;
+    right            : 0;
 
 }
 
