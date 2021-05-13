@@ -1,0 +1,39 @@
+body{
+    background-image: url(../img/pandas.png);
+    background-size: contain;
+    margin-bottom: 50px;
+}
+
+h1{
+    font-size: 45px;
+    font-family: sans-serif;
+    background: pink;
+    border-radius: 10px;
+    text-align: center;
+    width: 500px;
+    padding-top: 30px;
+    height: 100px;
+    margin: auto;
+    margin-top: 50px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.musiclist{
+    width: 500px;
+    text-align: center;
+    margin: auto;
+    /* background: rgb(250,0,0,0.1); */
+    background:pink;
+    border-radius: 10px;
+    margin-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+h2{
+    font-family: serif;
+    font-size: 40px;
+    color: black;
+    text-shadow: 2px 2px 2px white;
+}
