@@ -1,0 +1,266 @@
+body {
+    background-color: #fff;
+    position: relative;
+}
+
+.menu {
+    width      : 100%;
+    padding-top: 10px;
+}
+
+.menu ul {
+    display        : flex;
+    flex-wrap      : wrap;
+    justify-content: space-between;
+    width          : 100%;
+    margin         : 0;
+    padding        : 0;
+}
+
+.menu li {
+    list-style : none;
+    margin     : 5px;
+    font-size  : 14px;
+    font-family: cursive;
+}
+
+
+.menu a {
+    text-decoration: none;
+    color          : skyblue;
+    text-shadow    : 4px 1px 5px lightyellow;
+}
+
+a:hover {
+    color: rgb(11, 56, 153);
+}
+
+
+.main {
+    max-width: 500px;
+    height: 250px;
+    margin: 0 auto;
+    background-image: url("../img/pandangologo3.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+
+#panda {
+    width      : 200px;
+    height: 200px;
+    position   : absolute;
+    top        : 120px;
+    left:  0;
+    background-image: url("../img/pandango透明2.png");
+    background-size: 80px;
+    background-repeat: no-repeat;
+}
+
+
+.swing-outer:before,
+.swing-outer:after {
+    content: "";
+    display: table;
+}
+
+.swing-outer:after {
+    clear: both;
+}
+
+.swing {
+    animation: swing linear 7s infinite;
+    float    : left;
+}
+
+@keyframes swing {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(10deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.informationbox {
+    margin: 0 auto;
+    width: calc(100% - 10px);
+}
+
+.information {
+    border       : solid 1px gray;
+    margin       : auto;
+    border-radius: 15px;
+    background   : #FFFFE1;
+    padding:5px ;
+}
+
+.information dt{
+    font-weight: bold;
+}
+.information dd{
+    font-size:14px;
+}
+.information span {
+    margin-left: 5px;
+    color        : white;
+    background   : crimson;
+    border-radius: 5px;
+    font-size    : 12px;
+    padding:0 2px;
+}
+
+
+.information span {
+    font-family: Beon;
+    /* ネオン風のフォントを指定(ダウンロードしたもの) */
+    animation  : flash 2s infinite;
+    /* アニメーションflashを2秒ごとに繰り返す */
+}
+
+
+
+
+@keyframes flash {
+
+    0%,
+    100% {
+        /* 明るく光るよう影を重ねる */
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px rgb(255, 255, 255), 0 0 70px rgb(255, 255, 255), 0 0 80px rgb(255, 255, 255), 0 0 100px rgb(255, 255, 255), 0 0 150px rgb(255, 255, 255);
+    }
+
+    50% {
+        /* 淡く光るよう影を重ねる */
+        text-shadow: 0 0 10px rgb(255, 85, 85), 0 0 20px rgb(255, 85, 85), 0 0 30px #fcfcfc, 0 0 40px #fcfcfc;
+    }
+}
+
+h1{
+    font-size  : 25px;
+    text-align   : center;
+    font-family  : serif;
+    color        : skyblue;
+}
+
+.information a {
+    text-decoration: none;
+    color          : black;
+}
+
+.information a:hover {
+    color: cornflowerblue;
+}
+
+.profile{
+    margin-top: 30px;
+}
+
+.contents {
+    background   : radial-gradient(lightyellow, transparent);
+    border-radius: 20px;
+    padding: 0 10px;
+}
+
+.contents span {
+    color      : orange;
+    font-size  : 25px;
+    line-height: 70px;
+    font-family: cursive;
+    text-shadow: 2px 3px 1px yellow;
+}
+.contents span::after {
+    display: block;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    background-image: url("../img/pandango透明 半分.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+
+}
+.profile img {
+    height          : 200px;
+    margin          : auto;
+    margin-top      : 50px;
+}
+
+.profile p {
+    font-family: cursive;
+    margin     : auto;
+    font-size  : 16px;
+}
+.profile h1{
+    position: relative;
+}
+.profile h1 span{
+    background-color: #fff;
+    padding: 0 10px;
+}
+
+.profile h1::after {
+    display: block;
+    content: "";
+    margin-top: -20px;
+    width: 100%;
+    height: 4px;
+    border-bottom: 3px dashed #87CEEB;
+}
+
+.scrollpanda {
+    position: absolute;
+    width   : 100px;
+    height: 100px;
+    background-image: url("../img/scroll-panda.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    bottom: 15px;
+    right: 0;
+
+}
+
+footer {
+    margin-top: 50px;
+    width     : 100%;
+    height    : 50px;
+    text-align: center;
+    background: skyblue;
+    opacity   : 0.6;
+}
+
+.footer {
+    font-weight: bold;
+    padding-top: 10px;
+    color      : darkslategray;
+    font-family: system-ui;
+}
+
+.img {
+    max-width: 100%;
+    height   : auto;
+}
+
+* {
+    float   : none;
+    position: static;
+}
