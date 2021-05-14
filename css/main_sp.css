@@ -1,5 +1,5 @@
 body {
-    background-color: #fff;
+    background-color: rgb(201, 237, 252, 0.2);
     position: relative;
 }
 
@@ -11,6 +11,8 @@ body {
 .menu {
     width: 100%;
     padding: 10px 10px 0;
+    margin-bottom:10px;
+    margin-top: 10px;
 }
 
 .menu ul {
@@ -48,11 +50,13 @@ a:hover {
     background-repeat: no-repeat;
     background-position: 12px 0;
     position: relative;
+    margin: 0 24px;
 }
 
 #panda {
     width: 100%;
     padding-top: 53%;
+    padding:100px;
     position: absolute;
     top: 53%;
     left: 0;
@@ -94,8 +98,9 @@ a:hover {
 }
 
 .informationbox {
-    margin: 0 auto;
-    width: calc(100% - 10px);
+    margin: 0 24px;
+    width: calc(100% -3em);
+    margin-top: 50px;
 }
 
 .information {
@@ -103,19 +108,26 @@ a:hover {
     margin: auto;
     border-radius: 15px;
     background: #FFFFE1;
-    padding: 5px;
+    padding: 15px;
+    font-size: large;
+    margin-bottom: 50px;
 }
 
+.information dl{
+    margin-bottom: 0em;
+}
 .information dt {
     font-weight: bold;
+    float: left;
 }
 
 .information dd {
-    font-size: 14px;
+    font-size:20px;
+    text-align: center;
 }
 
 .information span {
-    margin-left: 5px;
+    margin-left:20px;
     color: white;
     background: crimson;
     border-radius: 5px;
@@ -158,43 +170,63 @@ h1 {
 }
 
 .profile {
-    margin-top: 30px;
+    /* margin-top: 30px;
+    margin: 0 auto;
+    width: calc(100% - 35px); */
+    margin-bottom:100px;
+    margin: 0 24px;
+    width: calc(100% -3em);
+    margin-top: 50px;
 }
 
 .contents {
     background: radial-gradient(lightyellow, transparent);
     border-radius: 20px;
-    padding: 0 10px;
+    padding: 0px 20px 35px;
+    margin-top: 30px;
+}
+
+.contents img{
+        display: block;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100px;
+        height: 100px;
+        background: radial-gradient(lightyellow, transparent);
+        background-image: url("../img/pandango透明 半分.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: auto;
 }
 
 .contents span {
     color: orange;
-    font-size: 25px;
+    font-size: 30px;
     line-height: 70px;
     font-family: cursive;
     text-shadow: 2px 3px 1px yellow;
+    text-align: center;
 }
 
-.contents span::after {
+/* .contents span::after {
     display: block;
     content: "";
     top: 0;
     left: 0;
     width: 100px;
     height: 100px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 50%;
+    background: radial-gradient(lightyellow, transparent);
     background-image: url("../img/pandango透明 半分.png");
     background-repeat: no-repeat;
     background-size: contain;
-}
+} */
 
-.profile img {
+/* .profile img {
     height: 200px;
     margin: auto;
     margin-top: 50px;
-}
+} */
 
 .profile p {
     font-family: cursive;
@@ -207,7 +239,7 @@ h1 {
 }
 
 .profile h1 span {
-    background-color: #fff;
+    background-color: rgb(201, 237, 252, 0);
     padding: 0 10px;
 }
 
@@ -221,14 +253,23 @@ h1 {
     border-bottom: 3px dashed #87CEEB;
 }
 
+.profile img{
+    display: block;
+    content: "";
+    width: 160px;
+    background-repeat: round;
+    margin-top: 40px;
+}
+
+
 .scrollpanda {
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     background-image: url("../img/scroll-panda.png");
     background-size: contain;
     background-repeat: no-repeat;
-    bottom: 15px;
+    bottom:55px;
     right: 0;
 }
 
@@ -258,6 +299,132 @@ footer {
     position: static;
 }
 
-@media screen and (min-width: 480px){
+@media screen and (min-width:700px){
+ .menu li{
+     font-size:30px;
+ }
 
+ h1{
+    font-size: 40px;
+ }
 }
+
+@media screen and (min-width:500px){
+    .contents{
+        display: flex;
+    }
+}
+
+@media screen and (min-width:1300px){
+    .wrap{
+        max-width: 1200px;
+    }
+    .menu a{
+        font-size:40px;
+    }
+    .informationbox{
+        margin-top: 150px;
+    }
+
+    .information{
+        font-size: 25px;
+    }
+
+    .information span{
+        font-size: 20px;
+        padding: 1px 4px;
+    }
+
+    .information dd{
+        font-size: 25px;
+    }
+    .profile{
+        margin-top: 100px;
+    }
+    .contents{
+        margin-top: 50px;
+    }
+
+    .contents span{
+        font-size: 40px;
+    }
+
+    footer{
+        margin-top: 150px;
+    }
+    #panda{
+        padding: 140px;
+    }
+    .profile p{
+        font-size: 25px;
+    }
+    .profile img{
+        height: 150px;
+        width: 200px;
+    }
+}
+
+@media screen and (min-width:2000px){
+    .wrap{
+        max-width: 1900px;
+    }
+    .menu a{
+        font-size:70px;
+    }
+    .informationbox{
+        margin-top: 200px;
+    }
+
+    .informationbox h1{
+        margin-bottom: 50px;
+    }
+
+    .information{
+        font-size:50px;
+    }
+
+    .information span{
+        margin-left: 115px;
+    color: white;
+    background: crimson;
+    border-radius: 15px;
+    font-size: 35px;
+    padding: 3px 10px;
+   }
+
+    .information dd{
+        font-size: 45px;
+    }
+    .profile{
+        margin-top:200px;
+    }
+    .contents{
+        margin-top:150px;
+        padding: 60px 20px 60px;
+    }
+
+    .contents span{
+        font-size: 70px;
+    }
+
+    footer{
+        margin-top: 200px;
+    }
+    #panda{
+        padding: 140px;
+    }
+    .profile p{
+        font-size:45px;
+    }
+    .profile img{
+        height: 200px;
+        width: 300px;
+    }
+
+    h1{
+        font-size: 70px;
+    }
+}
+
+
+
