@@ -17,6 +17,10 @@
     margin: auto;
 }
 
+.picture img{
+    margin: auto;
+}
+
 .picture h1{
     width: 230px;
     font-family: monospace;
@@ -25,10 +29,11 @@
     padding-top: 10px;
     font-size: 30px;
     margin: auto;
+    text-align: center;
 }
 
 .otukimi{
-    width: 300px;
+    /* width: 300px; */
     margin-right: 100px;
     text-align: center;
 }
@@ -43,11 +48,46 @@
 }
 
 .gif{
-    width: 280px;
+    /* width: 280px; */
 }
 
 #hover:hover{
     width: 450px;
     height: 250px;
     text-shadow: 2px 2px 2px #ddd;
+}
+
+@media screen and (max-width:1000px) {
+    .mozi{
+        width: 1000px;
+    }
+
+    .picture{
+        display:block;
+        /* width: 300px; */
+    }
+
+    .picture img{
+        width: 500px;
+        max-width: none;
+    }
+
+    .picture h1{
+        width: 500px;
+        font-size: 60px;
+        padding-top: 35px;
+        margin-bottom: 100px;
+    }
+
+    .otukimi{
+        margin-right:auto;
+    }
+
+    .fancy{
+        margin-right:auto;
+    }
+
+    #hover:hover{
+        pointer-events: none;
+    }
 }
