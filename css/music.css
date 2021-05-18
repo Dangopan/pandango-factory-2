@@ -4,6 +4,13 @@ body {
     margin-bottom: 50px;
 }
 
+p{
+    text-decoration: underline;
+    text-decoration-style:wavy;
+    text-decoration-color: red;
+    font-weight: bold;
+}
+
 h1 {
     font-size: 45px;
     font-family: sans-serif;
